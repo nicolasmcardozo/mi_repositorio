@@ -1,0 +1,5 @@
+from datetime import datetime
+from dateutil.relativedelta import relativedelta
+
+edad = relativedelta(datetime.now(), datetime(1994, 3, 19, 13, 9))
+print(f"{edad.years} años, {edad.months} meses, {edad.days} días, {edad.hours} horas y {edad.minutes} minutos")
